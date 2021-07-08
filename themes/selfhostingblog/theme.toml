@@ -1,0 +1,9 @@
+name = "selfhostingblog"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = ""
+
+[author]
+  name = "Ed Leeman"
+  homepage = "https://theselfhostingblog.com"

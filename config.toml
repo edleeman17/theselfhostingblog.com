@@ -1,0 +1,14 @@
+theme = "selfhostingblog"
+languageCode = "en-us"
+baseurl = "https://theselfhostingblog.com"
+title = "The Self-Hosting Blog"
+
+[params]
+  description = "Modern portfolio theme for your Hugo site."
+  author = "Ed Leeman"
+  authorEmail = "name@example.com"
+  authorImage = "/photo.png"
+  autoDarkMode = true
+
+  copyright = "Copyright © 2021 - John Doe · All rights reserved"
+  favicon = "favicon.ico"

@@ -1,0 +1,52 @@
+<header class="site-header container">
+    <div class="header-left">
+        <a class="logo" href="{{.Site.Home.Permalink}}">
+            <span class="logo-text">{{.Site.Title}}</span>
+        </a>
+    </div>
+    <nav class="main-nav hidden-xs hidden-sm hidden-md">
+        <a class="menu-item menu-item-home menu-item-current" href="https://theselfhostingblog.com/">Home</a>
+
+        {{with .Site.GetPage "/about-us" }}
+
+            <a class="menu-item menu-item-about-us" href="{{ .Permalink }}">{{ .Title }}</a>
+
+        {{end}}
+        <a class="menu-item menu-item-guides" href="https://theselfhostingblog.com/tag/guides/">Guides</a>
+        <a class="menu-item menu-item-ramblings" href="https://theselfhostingblog.com/tag/ramblings/">Ramblings</a>
+        <a class="menu-item menu-item-newsletter" href="https://theselfhostingblog.com/tag/newsletter/">Newsletter</a>
+        {{with .Site.GetPage "/contact" }}
+            <a class="menu-item menu-item-about-us" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{end}}
+        <a class="menu-item menu-item-rss" href="https://theselfhostingblog.com/rss/">RSS</a>
+
+    </nav>
+
+    <div class="burger hidden-lg hidden-xl">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
+
+    <div class="mobile-menu hidden-lg hidden-xl">
+        <div class="container">
+            <nav class="mobile-nav">
+                <a class="menu-item menu-item-home menu-item-current" href="https://theselfhostingblog.com/">Home</a>
+                <a class="menu-item menu-item-about-us" href="https://theselfhostingblog.com/about-us/">About Us</a>
+                <a class="menu-item menu-item-guides" href="https://theselfhostingblog.com/tag/guides/">Guides</a>
+                <a class="menu-item menu-item-ramblings"
+                    href="https://theselfhostingblog.com/tag/ramblings/">Ramblings</a>
+                <a class="menu-item menu-item-newsletter"
+                    href="https://theselfhostingblog.com/tag/newsletter/">Newsletter</a>
+                <a class="menu-item menu-item-contact" href="https://theselfhostingblog.com/contact/">Contact</a>
+                <a class="menu-item menu-item-rss" href="https://theselfhostingblog.com/rss/">RSS</a>
+
+                <button class="button-text menu-item menu-item-cta members-subscribe gh-portal-close"
+                    data-portal="signup/free">Subscribe</button>
+            </nav>
+        </div>
+    </div>
+    <div class="header-right hidden-xs hidden-sm hidden-md">
+        <button class="button-text menu-item menu-item-cta members-subscribe gh-portal-close"
+            data-portal="signup/free">Subscribe</button>
+    </div>
+</header>
