@@ -87,9 +87,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     font-weight: 800;
     margin-bottom: 4.5rem;
 }
-.home-template .logo {
-    display: none !important;
-}
 pre {
     overflow: auto !important;
 }

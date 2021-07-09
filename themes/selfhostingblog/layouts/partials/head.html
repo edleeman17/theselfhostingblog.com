@@ -2,5 +2,5 @@
     <title>
         {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}
     </title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}" />
 </head>

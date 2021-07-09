@@ -1,261 +1,35 @@
 <div class="site-content">
-
     <div class="content-area">
         <main class="site-main">
             <div class="post-feed container medium">
-                <article class="feed post tag-guides featured">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            Jul
+                {{ $mainPosts := (sort ( where site.RegularPages "Type" "post" ) "Date" "desc") }}
+                {{ range (.Paginate $mainPosts).Pages }}
+                    <article class="feed post tag-guides featured">
+                        <div class="feed-calendar">
+                            <div class="feed-calendar-month">
+                                {{ .Date.Format "Jan" }}
+                            </div>
+                            <div class="feed-calendar-day">
+                                {{ .Date.Format "01" }}
+                            </div>
                         </div>
-                        <div class="feed-calendar-day">
-                            03
+                        <h2 class="feed-title">{{ .Title }}</h2>
+                        <div class="feed-right">
+                            <svg class="icon feed-visibility feed-visibility-public">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <div class="feed-length">
+                                {{ .ReadingTime }} min read
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="feed-title">Self hosting Stringer, the anti-social RSS reader</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
+                        <svg class="icon feed-icon">
+                            <use xlink:href="#chevron-right"></use>
                         </svg>
-                        <div class="feed-length">
-                            9 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/self-hosting-stringer-the-anti-social-rss-reader/"
-                        aria-label="Self hosting Stringer, the anti-social RSS reader"></a>
-                </article>
-                <article class="feed post tag-guides featured">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            Jul
-                        </div>
-                        <div class="feed-calendar-day">
-                            02
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Self hosting your own Matrix server on a Raspberry Pi</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            9 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/self-hosting-your-own-matrix-server-on-a-raspberry-pi/"
-                        aria-label="Self hosting your own Matrix server on a Raspberry Pi"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            Jul
-                        </div>
-                        <div class="feed-calendar-day">
-                            01
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #17 • New Horizons</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            4 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-17-new-horizons/"
-                        aria-label="Issue #17 • New Horizons"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            May
-                        </div>
-                        <div class="feed-calendar-day">
-                            31
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #16 • We're moving to monthly</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            2 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-16-were-moving-to-monthly/"
-                        aria-label="Issue #16 • We're moving to monthly"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            May
-                        </div>
-                        <div class="feed-calendar-day">
-                            24
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #15 • Tell me when I suck</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            3 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-15-tell-me-when-i-suck/"
-                        aria-label="Issue #15 • Tell me when I suck"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            May
-                        </div>
-                        <div class="feed-calendar-day">
-                            17
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #14 • Are your services running?</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            4 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-14-are-your-services-running/"
-                        aria-label="Issue #14 • Are your services running?"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            May
-                        </div>
-                        <div class="feed-calendar-day">
-                            10
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #13 • Switching to iPhone from Android</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            3 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-13-switching-to-iphone-from-android/"
-                        aria-label="Issue #13 • Switching to iPhone from Android"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            May
-                        </div>
-                        <div class="feed-calendar-day">
-                            03
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #12 • Save time by using the Raspberry Pi Imager's hidden feature</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            4 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink"
-                        href="/posts/issue-12-save-time-by-using-the-raspberry-pi-imagers-hidden-feature/"
-                        aria-label="Issue #12 • Save time by using the Raspberry Pi Imager's hidden feature"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            Apr
-                        </div>
-                        <div class="feed-calendar-day">
-                            26
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #11 • Free tunnels from Cloudflare</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            3 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-11-free-tunnels/"
-                        aria-label="Issue #11 • Free tunnels from Cloudflare"></a>
-                </article>
-                <article class="feed post tag-newsletter">
-                    <div class="feed-calendar">
-                        <div class="feed-calendar-month">
-                            Apr
-                        </div>
-                        <div class="feed-calendar-day">
-                            19
-                        </div>
-                    </div>
-                    <h2 class="feed-title">Issue #10 • IP Masquerading and server notifications</h2>
-                    <div class="feed-right">
-                        <svg class="icon feed-visibility feed-visibility-public">
-                            <use xlink:href="#star"></use>
-                        </svg>
-                        <div class="feed-length">
-                            3 min read
-                        </div>
-                    </div>
-                    <svg class="icon feed-icon">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                    <a class="u-permalink" href="/posts/issue-10-ip-masquerading-and-server-notifications/"
-                        aria-label="Issue #10 • IP Masquerading and server notifications"></a>
-                </article>
+                        <a class="u-permalink" href="{{ .Permalink }}"
+                            aria-label="{{ .Title }}"></a>
+                    </article>
+                {{ end }}
             </div>
-            <nav class="pagination" style="display: none;">
-                <a class="older-posts" href="/page/2/"></a>
-            </nav>
-            <div class="infinite-scroll-status">
-                <div class="infinite-scroll-request"></div>
-            </div>
-            <div class="infinite-scroll-action">
-                <button class="button button-secondary infinite-scroll-button">Load more</button>
-            </div>
-
-
         </main>
     </div>
 </div>

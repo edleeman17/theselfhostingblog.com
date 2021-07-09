@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="site-content">
+  <div class="content-area">
+    <main class="site-main">
+      <article class="single post tag-guides featured">
+        <header class="single-header kg-canvas">
+          <div class="single-meta">
+            <span class="single-meta-item single-meta-date">
+              <time>
+                {{ .Date.Format "January, 1 2006" }}
+              </time>
+            </span>
+          </div>
+          <h1 class="single-title">{{ .Title }}</h1>
+        </header>
+        <div class="single-content kg-canvas u-text-format">
+
+          <div class="page-toc"></div>
+
+          {{ .Content }}
+
+          {{ partial "enjoying-the-post.html" }}
+
+        </div>
+
+        <footer class="single-footer container medium">
+          <div class="single-footer-left">
+          </div>
+          <div class="single-footer-middle">
+            <div class="single-footer-top">
+              <h3 class="single-footer-title">Published by:</h3>
+              <div class="author-list">
+                <div class="author-image-placeholder u-placeholder square">
+                  <a href="/author/ed/" title="Ed Leeman">
+                    <img class="author-image lazyload u-object-fit"
+                      data-srcset="/content/images/size/w150/2021/02/1591006807208.jpg"
+                      src="/content/images/size/w150/2021/02/1591006807208.jpg"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      alt="Ed Leeman">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-footer-bottom">
+              <div class="share">
+                <a class="share-link share-link-facebook"
+                  href="https://www.facebook.com/sharer.php?u=https://theselfhostingblog.com/posts/self-hosting-stringer-the-anti-social-rss-reader/"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon-facebook">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  Share
+                </a>
+                <a class="share-link share-link-twitter"
+                  href="https://twitter.com/intent/tweet?url=https://theselfhostingblog.com/posts/self-hosting-stringer-the-anti-social-rss-reader/&amp;text=Self%20hosting%20Stringer%2C%20the%20anti-social%20RSS%20reader"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="icon icon-twitter">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                  Tweet
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="single-footer-right">
+          </div>
+        </footer>
+      </article>
+    </main>
+  </div>
+</div>
+{{ end }}

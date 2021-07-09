@@ -6,20 +6,14 @@ description:
 type: page
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+**Hey, **If you wanna get in touch, you can use the options below!
 
-Hugo makes use of a variety of open source projects including:
+Email:   [hello@theselfhostingblog.com](mailto:hello@theselfhostingblog.com)
+Twitter: [@selfhostingblog](https://twitter.com/selfhostingblog)
+Mastodon: [@theselfhostingblog@fosstodon.org](https://fosstodon.org/web/accounts/320676)
+[![](https://theselfhostingblog.com/content/images/2021/03/Matrix.png)](https://matrix.to/#theselfhostingblog:matrix.org)[![](https://theselfhostingblog.com/content/images/2021/03/Discord.png)](https://discord.gg/gDvg8NAkZV)
+---
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+**Looking to advertise on this site? **Contact us on the email below!
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+[advertise@theselfhostingblog.com](mailto:advertise@theselfhostingblog.com)

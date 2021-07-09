@@ -1,25 +1,15 @@
 <header class="site-header container">
     <div class="header-left">
-        <a class="logo" href="{{.Site.Home.Permalink}}">
-            <span class="logo-text">{{.Site.Title}}</span>
-        </a>
+        {{ if not .IsHome }}
+            <a class="logo" href="{{.Site.Home.Permalink}}">
+                <span class="logo-text">{{.Site.Title}}</span>
+            </a>
+        {{ end }}
     </div>
     <nav class="main-nav hidden-xs hidden-sm hidden-md">
-        <a class="menu-item menu-item-home menu-item-current" href="https://theselfhostingblog.com/">Home</a>
-
-        {{with .Site.GetPage "/about-us" }}
-
-            <a class="menu-item menu-item-about-us" href="{{ .Permalink }}">{{ .Title }}</a>
-
-        {{end}}
-        <a class="menu-item menu-item-guides" href="https://theselfhostingblog.com/tag/guides/">Guides</a>
-        <a class="menu-item menu-item-ramblings" href="https://theselfhostingblog.com/tag/ramblings/">Ramblings</a>
-        <a class="menu-item menu-item-newsletter" href="https://theselfhostingblog.com/tag/newsletter/">Newsletter</a>
-        {{with .Site.GetPage "/contact" }}
-            <a class="menu-item menu-item-about-us" href="{{ .Permalink }}">{{ .Title }}</a>
-        {{end}}
-        <a class="menu-item menu-item-rss" href="https://theselfhostingblog.com/rss/">RSS</a>
-
+        {{ range where site.RegularPages "Type" "page" }}
+            <a class="menu-item" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
     </nav>
 
     <div class="burger hidden-lg hidden-xl">

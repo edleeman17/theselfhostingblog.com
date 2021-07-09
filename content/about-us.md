@@ -6,20 +6,20 @@ description:
 type: page
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Join us and discover the latest in self-hosted applications and other open source technologies.
 
-Hugo makes use of a variety of open source projects including:
+We built [The Self-Hosting Blog](https://theselfhostingblog.com/) to document our findings, we are two Software Engineers based in the UK. Whilst creating self-hosted applications separately we would often share notes on exciting technologies that we had discovered as well as any challenges that arose whilst setting them up. 
 
-- https://github.com/yuin/goldmark
-- https://github.com/alecthomas/chroma
-- https://github.com/muesli/smartcrop
-- https://github.com/spf13/cobra
-- https://github.com/spf13/viper
+We decided to create this blog to document our findings over our time in the industry and to help others on their journey into self-hosting. We believe that when using services online you should never have to compromise on privacy or control. 
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+We also believe that self-hosted applications and utilities should be available to everyone. We have made it our mission to make our posts as accessible as possible, even to those just getting started with self-hosting and creating a homelab. 
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+So welcome to our blog, feel free to drop us a line any time.
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+---
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+### Meet the authors:
+
+[![Ed Leeman](https://theselfhostingblog.com/content/images/size/w150/2021/02/1591006807208.jpg)](https://theselfhostingblog.com/author/ed/)
+
+[![James Burnham](https://theselfhostingblog.com/content/images/size/w150/2021/02/8777345.jpg)](https://theselfhostingblog.com/author/james/)
